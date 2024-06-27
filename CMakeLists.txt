@@ -53,14 +53,14 @@ include_directories("lib/")
 
 
 # Add Implementation Code
-CUDA_ADD_EXECUTABLE(MP1_Implement mp1_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP2_Implement mp2_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP3_Implement mp3_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP4_Implement mp4_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP5_Implement mp5_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP6_Implement mp6_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP7_Implement mp7_implement.cu ${wbhdr} ${wbsrc})
-CUDA_ADD_EXECUTABLE(MP8_Implement mp8_implement.cu ${wbhdr} ${wbsrc})
+CUDA_ADD_EXECUTABLE(MP1_Implement src/mp1.cu ${wbhdr} ${wbsrc})
+CUDA_ADD_EXECUTABLE(MP2_Implement src/mp2.cu ${wbhdr} ${wbsrc})
+CUDA_ADD_EXECUTABLE(MP3_Implement src/mp3.cu ${wbhdr} ${wbsrc})
+# CUDA_ADD_EXECUTABLE(MP4_Implement mp4_implement.cu ${wbhdr} ${wbsrc})
+# CUDA_ADD_EXECUTABLE(MP5_Implement mp5_implement.cu ${wbhdr} ${wbsrc})
+# CUDA_ADD_EXECUTABLE(MP6_Implement mp6_implement.cu ${wbhdr} ${wbsrc})
+# CUDA_ADD_EXECUTABLE(MP7_Implement mp7_implement.cu ${wbhdr} ${wbsrc})
+# CUDA_ADD_EXECUTABLE(MP8_Implement mp8_implement.cu ${wbhdr} ${wbsrc})
 #Add Tools
 CUDA_ADD_EXECUTABLE(MP1_Dataset tools/mp1_dataset.cpp ${wbhdr} ${wbsrc})
 CUDA_ADD_EXECUTABLE(MP2_Dataset tools/mp2_dataset.cpp ${wbhdr} ${wbsrc})
